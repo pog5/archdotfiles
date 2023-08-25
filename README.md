@@ -1,6 +1,9 @@
 # archdotfiles
 Dotfiles for artix linux with dinit and i3 (very simple rice)
-
+just intall 
+dracula-cursors-git dracula-gtk-theme-git dracula-icons-git 
+dracula-qtcreator-theme-git dracula-xresources-git
+from AUR/Chaotic and then make Qt apps use the theme aswell lol
 Repos:
 
 ```
