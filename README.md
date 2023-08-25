@@ -1,2 +1,2 @@
 # archdotfiles
-Dotfiles for arch (very simple rice)
+Dotfiles for artix linux with dinit and i3 (very simple rice)
