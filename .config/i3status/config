@@ -1,0 +1,36 @@
+general {
+		output_format = "i3bar"
+        colors = true
+        markup = "pango"
+        interval = 1
+        color_good = "#50FA7B"
+        color_degraded = "#F1FA8C"
+        color_bad = "#FF5555"
+}
+
+order += "ethernet _first_"
+order += "disk /"
+order += "load"
+order += "memory"
+order += "tztime local"
+
+ethernet _first_ {
+        format_up = "<span color='#8be9fd'> %ip (%speed)</span>"
+        format_down = ": Offline"
+}
+
+disk "/" {
+        format = "<span color='#ffb86c'> %avail</span>"
+}
+
+load {
+        format = "<span color='#ff79c6'> %1min%</span>"
+}
+
+memory {
+        format = "<span color='#50fa7b'> %used</span>"
+}
+
+tztime local {
+        format = "<span color='#f1fa8c'>%Y-%m-%d %H:%M:%S</span>"
+}
